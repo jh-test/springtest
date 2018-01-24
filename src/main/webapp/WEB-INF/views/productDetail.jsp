@@ -7,8 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<span>${productVO.name }</span>
+	
+	<%-- <span>${pro.name }</span>
+	<span>${pro.price }</span> --%>
+ 	<span>${productVO.name }</span>
 	<span>${productVO.price }</span>
 
 </body>

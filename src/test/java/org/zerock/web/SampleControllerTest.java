@@ -37,5 +37,4 @@ public class SampleControllerTest {
 			mockMvc.perform(MockMvcRequestBuilders.get("/doA"));
 		}
 	
-
 }

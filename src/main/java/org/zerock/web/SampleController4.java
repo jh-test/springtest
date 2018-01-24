@@ -13,16 +13,16 @@ public class SampleController4 {
 	
 	@RequestMapping("/doE")
 	public String doE(RedirectAttributes rttr){
-
 		logger.info("doE called but redirect to /doF.............");
 		
 		rttr.addFlashAttribute("msg", "This is the Message!! with redirected");
+//		rttr.addAttribute("msg", "This is the Message!! with redirected");
 		return "redirect:/doF";
 	}
 	
-	@RequestMapping("doF")
-	public void doF(@ModelAttribute String msg){
-		
+	@RequestMapping("/doF")
+	public void doF(@ModelAttribute("msg") String msg){
+//		System.out.println(msg);
 		logger.info("doF called............."+msg);
 	}
 }
